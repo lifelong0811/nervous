@@ -2,100 +2,13 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>org.nervous</groupId>
-        <artifactId>nervous-ark</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
     <groupId>org.nervous</groupId>
     <artifactId>nervous-bom</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <properties>
-        <mybatis.version>3.4.6</mybatis.version>
-        <jmh.version>1.21</jmh.version>
-        <snappy-java.version>1.1.7.2</snappy-java.version>
-        <sso.version>2.1.23</sso.version>
-        <stringtemplate.version>4.0.2</stringtemplate.version>
-        <commons-compress.version>1.18</commons-compress.version>
-        <maven-project.version>2.2.1</maven-project.version>
-        <fastjson.version>1.2.53</fastjson.version>
-        <commons-codec.version>1.11</commons-codec.version>
-        <maven-common-artifact-filters.version>3.0.1</maven-common-artifact-filters.version>
-        <caffeine.version>2.6.2</caffeine.version>
-        <HdrHistogram.version>2.1.10</HdrHistogram.version>
-        <commons-fileupload.version>1.3.3</commons-fileupload.version>
-        <commons-exec.version>1.3</commons-exec.version>
-        <jsr305.version>3.0.2</jsr305.version>
-        <mybatis-generator-core.version>1.3.7</mybatis-generator-core.version>
-        <HikariCP.version>3.2.0</HikariCP.version>
-        <netty.version>4.0.29.Final</netty.version>
-        <cellar.version>3.10.11</cellar.version>
-        <maven-shared-utils.version>3.2.1</maven-shared-utils.version>
-        <jsoup.version>1.11.3</jsoup.version>
-        <soa-annotations.version>1.0.6</soa-annotations.version>
-        <disruptor.version>3.4.2</disruptor.version>
-        <git.version>5.1.3.201810200350-r</git.version>
-        <commons-lang.version>2.6</commons-lang.version>
-        <maven-all.version>3.6.0</maven-all.version>
-        <maven-archiver.version>3.2.0</maven-archiver.version>
-        <plexus-utils.version>3.1.0</plexus-utils.version>
-        <mafka.version>2.2.25.4</mafka.version>
-        <hessian.version>3.1.5</hessian.version>
-        <validate-token-api.version>1.0.1</validate-token-api.version>
-        <concurrency-limits.version>0.1.9</concurrency-limits.version>
-        <squirrel.version>2.3.8.3</squirrel.version>
-        <avatar-tracker.version>2.2.5</avatar-tracker.version>
-        <uac-common-sdk.version>1.0.6</uac-common-sdk.version>
-        <plexus-interpolation.version>1.25</plexus-interpolation.version>
-        <commons-collections.version>3.2.2</commons-collections.version>
-        <cglib.version>3.2.9</cglib.version>
-        <picocontainer.version>2.15</picocontainer.version>
-        <cat.version>1.7.3</cat.version>
-        <zebra-dao.version>0.3.1</zebra-dao.version>
-        <kms.version>0.7.8</kms.version>
-        <netty3.version>3.10.6.Final</netty3.version>
-        <hystrix.version>1.5.18</hystrix.version>
-        <mapi.version>4.1.8</mapi.version>
-        <ehcache.version>3.6.2</ehcache.version>
-        <guava.version>20.0</guava.version>
-        <mybatis-dynamic-sql.version>1.1.0</mybatis-dynamic-sql.version>
-        <nanohttpd.version>2.3.1</nanohttpd.version>
-        <antlr-runtime.version>3.5.2</antlr-runtime.version>
-        <commons-beanutils.version>1.9.3</commons-beanutils.version>
-        <swagger-parser.version>1.0.39</swagger-parser.version>
-        <maven-invoker.version>3.0.1</maven-invoker.version>
-        <main.basedir>${basedir}/..</main.basedir>
-        <mtrace.version>1.1.21</mtrace.version>
-        <commons-io.version>2.6</commons-io.version>
-        <swagger.version>1.5.21</swagger.version>
-        <tomcat-juli.version>9.0.13</tomcat-juli.version>
-        <mbop.version>2.3.4</mbop.version>
-        <idl.version>1.9.0</idl.version>
-        <paranamer.version>2.8</paranamer.version>
-        <resilience4j.version>0.13.2</resilience4j.version>
-        <plexus-archiver.version>3.7.0</plexus-archiver.version>
-        <commons-dbcp2.version>2.5.0</commons-dbcp2.version>
-        <objenesis.version>3.0.1</objenesis.version>
-        <appkit.version>2.5.2</appkit.version>
-        <security.version>0.4.33</security.version>
-        <javassist.version>3.24.0-GA</javassist.version>
-        <groovy-all.version>2.3.9</groovy-all.version>
-        <plexus-classworlds.version>2.5.2</plexus-classworlds.version>
-        <commons-lang3.version>3.8.1</commons-lang3.version>
-        <mybatis-spring.version>1.3.2</mybatis-spring.version>
-        <plexus.version>1.4</plexus.version>
-        <reflections.version>0.9.11</reflections.version>
-        <asm.version>7.0</asm.version>
-        <zookeeper.version>3.4.13</zookeeper.version>
-        <druid.version>1.1.12</druid.version>
-        <annotations.version>3.0.1u2</annotations.version>
-        <auto-service.version>1.0-rc4</auto-service.version>
-        <shiro.version>1.4.0</shiro.version>
-        <commons-collections4.version>4.2</commons-collections4.version>
-
-
     </properties>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -4633,41 +4546,5 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>flatten-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>flatten</id>
-                        <phase>process-resources</phase>
-                        <goals>
-                            <goal>flatten</goal>
-                        </goals>
-                        <configuration>
-                            <flattenMode>bom</flattenMode>
-                            <pomElements>
-                                <parent>expand</parent>
-                                <distributionManagement>remove</distributionManagement>
-                                <dependencyManagement>expand</dependencyManagement>
-                                <properties>keep</properties>
-                                <build>keep</build>
-                            </pomElements>
-                            <updatePomFile>true</updatePomFile>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>flatten-clean</id>
-                        <phase>clean</phase>
-                        <goals>
-                            <goal>clean</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <inherited>false</inherited>
-            </plugin>
-        </plugins>
-    </build>
 </project>
 
