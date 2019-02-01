@@ -26,3 +26,4 @@
 
 ###maven
 .mvn
+*/target
