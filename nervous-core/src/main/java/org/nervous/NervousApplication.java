@@ -1,8 +1,11 @@
-package org.nervous.nervous;
+package org.nervous;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @author wangleijie
+ */
 @SpringBootApplication
 public class NervousApplication {
 

@@ -1,4 +1,4 @@
-package org.nervous.nervous;
+package org.nervous;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

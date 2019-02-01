@@ -6,30 +6,22 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.1.2.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.nervous</groupId>
-	<artifactId>nervous</artifactId>
+	<artifactId>nervous.all</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>nervous</name>
-	<description>Demo project for Spring Boot</description>
+	<packaging>pom</packaging>
+	<description>nervous main project</description>
+
+	<modules>
+		<module>nervous-core</module>
+	</modules>
 
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
 
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
 
 	<build>
 		<plugins>
@@ -39,5 +31,16 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>rdc-releases</id>
+			<url>https://repo.rdc.aliyun.com/repository/33086-release-P1Qh8n/</url>
+		</repository>
+		<snapshotRepository>
+			<id>rdc-snapshots</id>
+			<url>https://repo.rdc.aliyun.com/repository/33086-snapshot-TBe7tr/</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 </project>
