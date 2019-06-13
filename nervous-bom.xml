@@ -165,7 +165,7 @@
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
-                <version>20.0</version>
+                <version>24.0-jre</version>
             </dependency>
             <dependency>
                 <groupId>org.hdrhistogram</groupId>
@@ -4546,5 +4546,15 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+    <distributionManagement>
+        <repository>
+            <id>rdc-releases</id>
+            <url>https://repo.rdc.aliyun.com/repository/33086-release-P1Qh8n/</url>
+        </repository>
+        <snapshotRepository>
+            <id>rdc-snapshots</id>
+            <url>https://repo.rdc.aliyun.com/repository/33086-snapshot-TBe7tr/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
 

@@ -24,6 +24,8 @@
 				<groupId>org.nervous</groupId>
 				<artifactId>nervous-bom</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
+				<scope>import</scope>
+				<type>pom</type>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
